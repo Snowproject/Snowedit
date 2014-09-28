@@ -1,0 +1,1 @@
+<center>Copyright &copy; {hotelName} Hotel 2013</center>

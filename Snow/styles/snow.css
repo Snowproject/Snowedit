@@ -1,0 +1,329 @@
+@font-face {
+	font-family: 'ubuntu-condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/ubuntu/Ubuntu-C.ttf') format('truetype');
+ }
+ 
+@font-face {
+	font-family: 'ubuntu-regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/ubuntu/Ubuntu-R.ttf') format('truetype');
+ }
+ 
+@font-face {
+	font-family: 'ubuntu-light';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/ubuntu/Ubuntu-L.ttf') format('truetype');
+ }
+ 
+@font-face {
+	font-family: 'ubuntu-bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/ubuntu/Ubuntu-B.ttf') format('truetype');
+ }
+ 
+html {-webkit-font-smoothing: subpixel-antialiased;}
+ 
+body {
+	background-attachment: fixed;
+	background-image: url('/app/tpl/skins/Snow/img/habbo_texture.png'),-webkit-linear-gradient(#0297c8 -40%,#0C3A65 80%);
+	background-image: url('/app/tpl/skins/Snow/img/habbo_texture.png'),-moz-linear-gradient(#0297c8 -40%,#0C3A65 80%);
+	
+ }
+ 
+#habbo-hotel-image {
+	background: url('/app/tpl/skins/Snow/img/habbo_hotel.png') no-repeat;
+	height: 100%;
+	left: -380px;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+ }
+ 
+ #habbo-hotel-image-register {
+ 	background: url('/app/tpl/skins/Snow/img/habbo_hotel.png') no-repeat;
+ 	height: 135%;
+ 	left: -350px;
+ 	position: absolute;
+ 	top: 30px;
+ 	width: 100%;
+	
+  }
+ 
+#login {
+	position: absolute;
+	right: 30px;
+	top: 50px;
+	width: 350px;
+ }
+ 
+#login .title {
+	color: #F1EDE9;
+	font-family: ubuntu-condensed;
+	font-size: 48px;
+ }
+
+#login .help {
+    margin-top:40px;
+	margin-bottom:40px;
+
+ }
+ 
+#login .help a{
+
+    color:#20A0BF;
+	font-family: ubuntu-condensed;
+	font-size: 25px;  
+	display:inline-block;
+	text-decoration: none;
+	border-bottom: 1px solid #2E97B3;
+	padding-bottom:-5px:
+	
+}
+#login .help .title {
+
+	color: #7AC6EA;
+	font-family: ubuntu-condensed;
+	font-size: 30px; 
+    display:block;	
+
+ }
+  
+
+#login input {
+	background: #CCD8DF;
+	border-radius: 6px 6px 6px 6px;
+	border: 4px solid #275D8E;
+	box-shadow: inset 0px 2px #9EBECC;
+	color: #798B90;
+	display: block;
+	font-family: ubuntu-regular;
+	font-size: 20px;
+	margin-top: 15px;
+	outline: 0;
+	padding: 5px;
+	width: 100%;
+ }
+ 
+#login input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #798B90;
+ }
+#login input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #798B90;
+ }
+#login input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #798B90;
+ }
+#login input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #798B90;
+ }
+ 
+#login input.active {border: 4px solid #0F7AA8;}
+ 
+ .btn {
+ 
+    font-family:ubuntu-regular;
+    font-size:20px;
+    color:#fff;
+    border-radius: 6px 6px 6px 6px;
+    padding:10px;
+    box-shadow: 0px 1px 0px 3px  #082641;
+    display:inline-block;
+    margin-top:20px;
+    margin-right:12px;
+	cursor:pointer;
+	text-decoration:none;
+  
+ }
+ 
+ .regibutton {
+    background-image: linear-gradient(top,#06b101,#049801);
+background-image: -o-linear-gradient(top,#06b101,#049801);
+background-image: -moz-linear-gradient(top,#06b101,#049801);
+background-image: -webkit-linear-gradient(top,#06b101,#049801);
+background-image: -ms-linear-gradient(top,#06b101,#049801);
+background-color: #049801;
+border: 1px solid #058201;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+color: #fff;
+font-weight: normal;
+cursor: pointer;
+display: inline-block;
+font-family: verdana,arial,tahoma;
+font-size: 14px;
+padding: 6px;
+text-align: center;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+margin-left:10px;
+margin-top:5px;
+width: 204px;
+height: 35px;
+}
+ 
+ .btn.red{
+    background:#AC1A4F;
+    border:3px solid #F37387;
+ }
+ 
+ .btn.green{
+	background:#019E55;
+	border:3px solid #B6F272;
+ }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  z-index:999;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #0E151C;   
+
+}
+
+#overlay p{
+
+font-family:ubuntu-regular;
+font-size:28px;
+color:#173038;
+
+}
+
+#overlay span {
+    position:relative;
+    top:5%;
+}	
+ 
+@media screen and (min-width: 1280px) {
+    #login { 
+	right:115px;
+	top:160px;
+	width:400px;
+   }
+   
+   #overlay span {
+    position:relative;
+    top:120px;
+}	
+ }
+ 
+p {
+	color: #77C2E7;
+	font-family: ubuntu-bold;
+ }
+ 
+#registration{
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	width: 360px;
+	padding:10px;
+	height:auto;
+	overflow-y:scroll;
+ }
+ 
+::-webkit-scrollbar {
+	width:12px;
+}
+::-webkit-scrollbar-thumb {
+	background-color:#0FA4B5;
+	border-radius:9px;
+background-clip: content-box;
+	margin:200px;
+	cursor:pointer;
+	border:4px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+	background:#17171D;
+	
+	border: 2px solid #225177;
+	border-radius:9px;
+}
+
+#registration .title{
+
+	color: #F1EDE9;
+	font-family: ubuntu-condensed;
+	font-size: 40px;
+
+ }
+ 
+ 
+#registration input {
+	background: #CCD8DF;
+	border-radius: 6px 6px 6px 6px;
+	border: 4px solid #275D8E;
+	box-shadow: inset 0px 2px #9EBECC;
+	color: #798B90;
+	display: block;
+	font-family: ubuntu-condensed;
+	font-size: 20px;
+	margin-top: 15px;
+	outline: 0;
+	padding: 5px;
+	width: 100%;
+ }
+ 
+#registration select {
+
+    font-family:ubuntu-condensed;
+    font-size:20px;
+    color:#fff;
+    border-radius: 6px 6px 6px 6px;
+    padding:4px;
+	outline:0;
+    box-shadow: 0px 1px 0px 3px  #082641;
+    display:inline-block;
+    margin-right:12px;
+	cursor:pointer;
+	background:#019E55;
+	border:3px solid #B6F272;
+
+}
+ 
+#registration input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #798B90;
+ }
+#registration input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #798B90;
+ }
+#registration input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #798B90;
+ }
+#registration input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #798B90;
+ }
+#registration input.active {border: 4px solid #0F7AA8;}
+
+@media screen and (min-width: 1280px) {
+    #registration { 
+	right:70px;
+	top:70px;
+    height:auto;
+	overflow-y:hidden;
+	width:450px;
+   }
+ }
+ 
+#registration .section {
+
+ margin-bottom:20px;
+
+ }
+ 
+#registration .section .title{
+
+	color: #7AC6EA;
+	font-family: ubuntu-condensed;
+	font-size: 30px;  
+
+ }
